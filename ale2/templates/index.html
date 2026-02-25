@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador: LDR + ESP32 + LED</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Simulação: Iluminação Automática</h2>
+        <p>Mova o controle para simular a luminosidade do ambiente captada pelo LDR.</p>
+        
+        <label for="ldrInput">Luminosidade Ambiente (LDR):</label>
+        <input type="range" id="ldrInput" min="0" max="4095" value="2048" oninput="enviarDados()">
+        
+        <div class="dados">
+            <p>LDR (Entrada): <span id="ldrValor">2048</span></p>
+            <p>PWM (Saída): <span id="pwmValor">127</span></p>
+        </div>
+
+        <div class="led-box" id="ledVisual">
+            <p style="color: #000; font-weight: bold;">LED</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

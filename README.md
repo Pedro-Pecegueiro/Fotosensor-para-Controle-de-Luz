@@ -9,3 +9,6 @@ Sistema de monitoramento e automação de iluminação desenvolvido com **Python
 
 ## 🛠️ Instalação e Execução
 
+1. **Clone o repositório:**
+   ```powershell
+   git clone [https://github.com/Pedro-Pecegueiro/Fotosensor-para-Controle-de-Luz.git](https://github.com/Pedro-Pecegueiro/Fotosensor-para-Controle-de-Luz.git)
